@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>Etch-A-Sketch</h1></div>
+        <h3>World Cup Edition</h3>
+        <p id="info">Click anywhere to start drawing</p>
+        <p id="draw"></p>
+        <div class="content">
+            <div class="board"></div>
+            <div class="button">
+                <button id="spain" class="color"></button>
+                <button id="germany" class="color"></button>
+                <button id="brazil" class="color"></button>
+                <button id="italy" class="color"></button>
+                <button id="france" class="color"></button>
+                <button id="argentine" class="color"></button>
+            </div>
+            <button class="button-2" onclick="clearBoard()">Reset</button>
+            
+                <p id="info2">Choose between 1 and 30</p>
+                <div>
+                    <input class="basic-slide" type="text" placeholder="Size of Board" value="16" id="size-txt">
+                    <button class="set-size button-3" onclick="setSize()">Set Size</button>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
